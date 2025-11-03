@@ -1,0 +1,6 @@
+[core]
+remote = myremote
+
+[remote "myremote"]
+url = gs://dvc-lab-user
+credentialpath = C:\Users\chara\OneDrive\Desktop\MLOps\Labs\Data_Labs\DVC_Labs\Lab_1\gcp-credentials1.json
