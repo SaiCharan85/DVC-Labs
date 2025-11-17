@@ -1,3 +1,25 @@
+# DVC with Google Cloud Storage Setup
+
+## Project Setup and Configuration
+
+### 1. DVC Initialization and Configuration
+- Initialized DVC in the project directory
+- Configured GCS (Google Cloud Storage) as the remote storage backend
+- Set up remote configuration to use the GCS bucket: `gs://mlops-dvc-lab1`
+- Added proper `.gitignore` rules to exclude sensitive files
+
+### 2. Data Management
+- Added data files to DVC tracking:
+  - `data/CC_GENERAL.csv`
+  - `data/data.txt`
+- Successfully pushed data to the remote GCS bucket
+- Verified data integrity and versioning
+
+### 3. Security Notes
+- GCP service account credentials are stored in `gc_credentials.json`
+- This file is excluded from version control via `.gitignore`
+- Credentials should be managed securely and not shared
+
 ## Data Version Control (DVC)
 
 - [DVC](https://dvc.org/) is an open-source tool that serves as a powerful asset in the machine learning project toolkit, with a primary focus on data versioning.
